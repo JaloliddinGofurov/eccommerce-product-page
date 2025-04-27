@@ -2,7 +2,7 @@
 :root {
   --text-color: #69707d;
   --text-color-dark: #1d2026;
-  --accsent-color: ff7e1b;
+  --accsent-color: #ff7e1b;
   --accsent-color-hover: #ffab6a;
   --accsent-color-light: #ffeee2;
   --light-bg: #f6f8fd;
@@ -189,6 +189,38 @@ select:-webkit-autofill:focus {
 
 .site-header__sitenav {
   margin-right: auto;
+}
+/* CART */
+.site-header__cart {
+
+}
+.site-header__cart-link {
+  position: relative;
+  display: flex;
+  color: var(--text-color);
+}
+.site-header__cart-link:hover {
+  color: var(--text-color-dark);
+}
+.site-header__cart-link:active {
+  opacity: 0.6;
+}
+.site-header__cart-product-count {
+  position: absolute;
+  left: calc(100% - 13px);
+  top: -6px;
+  padding: 1px 6px;
+  border-radius: 7px;
+  font-size: 10px;
+  line-height: normal;
+  font-weight: bold;
+  color: #fff;
+  background-color: var(--accsent-color);
+}
+.site-header__cart-icon {
+  width: 22px;
+  height: 20px;
+  object-fit: contain;
 }
 
 @media
