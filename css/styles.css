@@ -1,3 +1,35 @@
+/* CUSTOM PROPS */
+:root {
+  --text-color: #69707d;
+  --text-color-dark: #1d2026;
+  --accsent-color: ff7e1b;
+  --accsent-color-hover: #ffab6a;
+  --accsent-color-light: #ffeee2;
+  --light-bg: #f6f8fd;
+
+  --font-family: "Kumbh Sans", "Arial", sans-serif;
+}
+
+/* FONT-FACE */
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("../fonts/KumbhSans-Bold.woff2") format("woff2"),
+    url("../fonts/KumbhSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("../fonts/KumbhSans-Regular.woff2") format("woff2"),
+    url("../fonts/KumbhSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -17,11 +49,11 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: var(--font-family);
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 26px;
   background-color: #fff;
-  color: #222;
+  color: var(--text-color);
 }
 
 img {
