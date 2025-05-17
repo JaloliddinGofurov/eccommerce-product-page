@@ -96,7 +96,7 @@
         <div class="img-showcase">
           <div class="img-showcase__showcase">
             <button class="img-showcase__lightbox-toggle js-lightbox-toggler" type="button" aria-label="Open image gallery"></button>
-             <img class="img-showcase__active-img" src="img/sneakers-1.jpg" alt="Fall Limited Edition Sneakers" width="445" height="445" srcset="img/sneakers-1.jpg 1x, img/sneakers-1@2x.jpg 2x">
+             <img class="img-showcase__active-img img-showcase__active-img--lightbox" src="img/sneakers-1.jpg" alt="Fall Limited Edition Sneakers" width="445" height="445" srcset="img/sneakers-1.jpg 1x, img/sneakers-1@2x.jpg 2x">
           </div>
 
           <ul class="img-showcase__thumbnails">
@@ -147,16 +147,17 @@
     <div class="img-showcase img-showcase--lightbox">
       <div class="img-showcase__showcase">
         <!-- IMG SHOWCASE CONTROL -->
-        <button class="img-showcase__control img-showcase__control--prev" type="button" aria-label="Previous">
+        <button class="img-showcase__control img-showcase__control--prev js-lightbox-control-prev" type="button" aria-label="Previous">
           <span class="img-showcase__control-inner">
             <svg class="img-showcase__control-icon" width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m11 2-8 8 8 8" stroke="currentColor" stroke-width="3"/></svg>
           </span>
         </button>
-        <button class="img-showcase__control img-showcase__control--next" type="button" aria-label="Next">
+        <button class="img-showcase__control img-showcase__control--next js-lightbox-control-next" type="button" aria-label="Next">
           <span class="img-showcase__control-inner">
             <svg class="img-showcase__control-icon" width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m2 2 8 8-8 8" stroke="currentColor" stroke-width="3"/></svg>
           </span>
         </button>
+
          <img class="img-showcase__active-img" src="img/sneakers-1.jpg" alt="Fall Limited Edition Sneakers" width="445" height="445" srcset="img/sneakers-1.jpg 1x, img/sneakers-1@2x.jpg 2x">
       </div>
 
